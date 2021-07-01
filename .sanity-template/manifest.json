@@ -7,6 +7,11 @@
     "name": "Netlify",
     "url": "https://www.netlify.com/"
   }],
+  "previewMedia": {
+    "type": "image",
+    "src": ".sanity-template/assets/site.jpg",
+    "alt": "Madlibs frontend"
+  },
   "deployment": {
     "provider": "netlify",
     "sites": [
@@ -20,6 +25,11 @@
           "base": "./studio",
           "dir": "dist",
           "cmd": "npm run build && cp netlify.toml dist"
+        },
+        "previewMedia": {
+          "type": "image",
+          "src": ".sanity-template/assets/studio.jpg",
+          "alt": "Madlibs studio"
         }
       },
       {
@@ -32,6 +42,11 @@
           "base": "./site",
           "dir": "_site",
           "cmd": "npm run build"
+        },
+        "previewMedia": {
+          "type": "image",
+          "src": ".sanity-template/assets/site.jpg",
+          "alt": "Madlibs frontend"
         },
         "requiredTokens": [
           {
