@@ -17,7 +17,7 @@
         "description": "The Sanity Studio is where you edit and structure your content.",
         "dir": "./studio",
         "buildSettings": {
-          "base": "./template/studio",
+          "base": "./studio",
           "dir": "dist",
           "cmd": "npm run build && cp netlify.toml dist"
         }
@@ -29,10 +29,11 @@
         "description": "The 11ty front-end that uses markdown and Sanity blog posts",
         "dir": "./web",
         "buildSettings": {
-          "base": "./template/web",
+          "base": "./site",
           "dir": "_site",
           "cmd": "npm run build"
         }
+
       }
     ]
   }
