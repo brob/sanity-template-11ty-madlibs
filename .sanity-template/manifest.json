@@ -1,7 +1,7 @@
 {
   "version": 2,
-  "title": "11ty Mix and Match",
-  "description": "A project that lets you mix and match Markdown blog posts with Sanity-hosted blog posts in 11ty.",
+  "title": "11ty Serverless Madlibs",
+  "description": "",
   "technologies": [{
     "id": "netlify",
     "name": "Netlify",
@@ -13,7 +13,7 @@
       {
         "id": "studio",
         "type": "studio",
-        "title": "Sanity Studio",
+        "title": "Madlibs Studio",
         "description": "The Sanity Studio is where you edit and structure your content.",
         "dir": "./studio",
         "buildSettings": {
@@ -25,7 +25,7 @@
       {
         "id": "web",
         "type": "web",
-        "title": "11ty Mix and Match Site",
+        "title": "11ty Madlibs",
         "description": "The 11ty front-end that uses markdown and Sanity blog posts",
         "dir": "./web",
         "buildSettings": {
@@ -33,7 +33,6 @@
           "dir": "_site",
           "cmd": "npm run build"
         }
-
       }
     ]
   }
