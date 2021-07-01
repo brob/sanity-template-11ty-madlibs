@@ -1,0 +1,25 @@
+---
+layout: 'lib.njk'
+pagination:
+  data: madlibs
+  alias: madlib
+  size: 1
+permalink: "madlibs/{{ madlib.slug | slug }}/index.html"
+---
+
+<h2>{{ madlib.title }}</h2>
+<p><em>Instructions:</em> Fill out this form, submit it and get your story. It will hopfully make little-to-no sense. Afterward, you can save the madlib and send it to your friends.</p>
+<div class="madlibtext">
+<a href="#" class="saver">Save it</a>
+{{ madlib.htmlText | safe }}
+</div>
+<h2>Form</h2>
+<form class="madlibForm stack">
+{% for input in madlib.formFields %}
+    <label>
+        {{ input.displayText }} ({{ input.grammar }})
+        <input type="text" class="libInput" name={{input._key}}>
+    </label>
+{% endfor %}
+<button>Done</button>
+</form>
