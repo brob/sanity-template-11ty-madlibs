@@ -32,7 +32,13 @@
           "base": "./site",
           "dir": "_site",
           "cmd": "npm run build"
-        }
+        },
+        "requiredTokens": [
+          {
+            "label": "madlibCreateToken",
+            "role": "write"
+          }
+        ]
 
       }
     ]
