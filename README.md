@@ -20,6 +20,7 @@ netlify dev
 ### Studio setup
 
 ```bash
+cd studio
 sanity install
 npm start
 ```
